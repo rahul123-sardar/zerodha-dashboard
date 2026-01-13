@@ -9,7 +9,7 @@ const Holdings = () => {
 
  useEffect(() => {
   axios
-    .get("http://localhost:3002/allHoldings")
+    .get("https://zerodha-backend-1-fidb.onrender.com/allHoldings")
     .then((res) => {
       if (Array.isArray(res.data)) {
         setAllHoldings(res.data); // ✅ save to state
